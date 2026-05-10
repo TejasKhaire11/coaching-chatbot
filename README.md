@@ -1,16 +1,22 @@
 # 🎓 EduBot — AI Chatbot for Coaching Institutes
 
-A ready-to-deploy AI chatbot built with Python + Streamlit + OpenAI GPT.  
-Designed for coaching institutes to handle student/parent queries 24/7 — automatically.
+> A production-ready AI chatbot that handles student & parent queries 24/7 — automatically, in Hindi, English & Hinglish.
+
+![Python](https://img.shields.io/badge/Python-3.12-blue?style=flat-square&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.40+-red?style=flat-square&logo=streamlit)
+![Groq](https://img.shields.io/badge/Groq-LLaMA3-orange?style=flat-square)
+
 
 ---
 
 ## 🚀 Features
-- Instant answers about courses, fees, timings, admissions
-- Quick-question buttons for common queries  
-- Supports Hindi, English, and Hinglish
-- Fully customizable for any institute
-- Beautiful, mobile-friendly UI
+
+- ⚡ Instant AI replies powered by **Groq + LLaMA 3** (fastest free AI API)
+- 🌐 Supports **Hindi, English & Hinglish** automatically
+- 🔘 One-click **quick question buttons** for common queries
+- 🎨 Beautiful, **mobile-friendly UI**
+- 🔧 **10-minute customization** for any institute
+- ☁️ **Free deployment** on Streamlit Cloud
 
 ---
 
@@ -18,7 +24,7 @@ Designed for coaching institutes to handle student/parent queries 24/7 — autom
 
 ### 1. Clone this repo
 ```bash
-git clone https://github.com/YOUR_USERNAME/coaching-chatbot.git
+git clone https://github.com/TejasKhaire11/coaching-chatbot.git
 cd coaching-chatbot
 ```
 
@@ -27,64 +33,58 @@ cd coaching-chatbot
 pip install -r requirements.txt
 ```
 
-### 3. Add your OpenAI API key
+### 3. Get your FREE Groq API key
+
+### 4. Add your API key
 Create the file `.streamlit/secrets.toml`:
 ```toml
-OPENAI_API_KEY = "sk-your-key-here"
+GROQ_API_KEY = "your-groq-key-here"
 ```
-> Get a free API key at https://platform.openai.com
+> ⚠️ Never upload this file to GitHub 
 
-### 4. Customize the institute info
-Open `app.py` and edit the `INSTITUTE_INFO` block with your client's details:
-- Institute name, address, phone
-- Courses and fees
-- Batch timings
-- Admission process
+### 5. Customize for your client
 
-### 5. Run locally
+
+### 6. Run locally
 ```bash
 streamlit run app.py
 ```
+Open [http://localhost:8501](http://localhost:8501) in your browser.
 
 ---
 
 ## ☁️ Deploy for Free (Streamlit Cloud)
 
-1. Push this repo to GitHub (without the secrets.toml file!)
-2. Go to https://share.streamlit.io
-3. Connect your GitHub repo
-4. Add your `OPENAI_API_KEY` in the Streamlit Cloud secrets panel
-5. Click Deploy — your chatbot is live in 2 minutes! 🎉
-
----
-
-## 💰 How to Sell This
-
-**Pricing suggestion:**
-- Setup fee: ₹3,000 – ₹5,000 (one time)
-- Monthly maintenance: ₹1,000/month
-- API costs (OpenAI): ~₹200–₹500/month (client pays or you include it)
-
-**Target clients in Nashik:**
-- Coaching institutes (JEE/NEET/MHT-CET)
-- Schools with admission queries
-- Private tutors with many students
-- Any business with repetitive customer questions
+1. Push this repo to GitHub (without `secrets.toml`)
+2. Go to [share.streamlit.io](https://share.streamlit.io)
+3. Connect your GitHub repo → select `app.py`
+4. Go to **Advanced Settings → Secrets** and paste:
+```toml
+GROQ_API_KEY = "your-groq-key-here"
+```
+5. Click **Deploy** — live URL ready in 2 minutes! 🎉
 
 ---
 
 ## 📁 Project Structure
+
 ```
 coaching-chatbot/
-├── app.py              ← Main chatbot application
-├── requirements.txt    ← Python dependencies
+├── app.py               ← Main chatbot application
+├── requirements.txt     ← Python dependencies
+├── .gitignore           ← Keeps secrets safe
 ├── .streamlit/
-│   └── secrets.toml   ← API key (DO NOT upload to GitHub)
+│   └── secrets.toml    ← API key (never push this!)
 └── README.md
 ```
 
 ---
 
 ## 👨‍💻 Built by
-[Your Name] — AIML Engineering Student | Freelance AI Developer  
-📧 your@email.com | 🔗 linkedin.com/in/yourprofile
+
+**Tejas Khaire** — AIML Engineering Student (3rd Year) |  AI Developer
+
+📧 tejaskhaire2005@gmail.com | 🔗 [LinkedIn](https://www.linkedin.com/in/tejas-khaire-168b61276/) | 🐙 [GitHub](https://github.com/TejasKhaire11)
+
+---
+
