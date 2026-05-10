@@ -1,0 +1,5 @@
+# Never upload your API key!
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.env
